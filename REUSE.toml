@@ -1,0 +1,50 @@
+version = 1
+
+[[annotations]]
+path = [
+    "course_content/tutorials/*.ipynb",
+    "course_content/tutorials/**/*.ipynb"
+]
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "Apache-2.0 AND CC-BY-4.0"
+SPDX-FileComment = "Code cells are Apache-2.0. Markdown and raw cells are CC-BY-4.0."
+
+[[annotations]]
+path = [
+    "course_content/Dockerfile",
+    "course_content/environment/*",
+    "course_content/tutorials/**/*.py"
+]
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+    ".gitignore",
+    "CODEOWNERS",
+    "REUSE.toml",
+    "course_content/.dockerignore"
+]
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+    "README.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "course_content/README.md",
+    "course_content/slides/*.md"
+]
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = [
+    "course_content/tutorials/images/*",
+    "course_content/tutorials/**/images/*"
+]
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "NVIDIA-created educational media and screenshots. NVIDIA trademark rights are not licensed."
