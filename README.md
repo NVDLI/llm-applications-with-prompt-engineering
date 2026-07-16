@@ -114,7 +114,7 @@ This repository uses a mixed licensing model:
 - Source-code files and code cells in Jupyter notebooks:
   [Apache License 2.0](LICENSES/Apache-2.0.txt)
 - Documentation, Markdown and raw notebook cells, and NVIDIA-created
-  educational media:
+  educational media except proprietary assets identified in `REUSE.toml`:
   [Creative Commons Attribution 4.0 International](LICENSES/CC-BY-4.0.txt)
 - Third-party material: its original license, as documented in
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
@@ -122,5 +122,11 @@ This repository uses a mixed licensing model:
 Each complete Jupyter notebook is dual-licensed: code cells under Apache-2.0
 and non-code cells under CC-BY-4.0. The combined dual-license terms are in
 [LICENSES/CC-BY-4.0-Apache2_Dual_License.txt](LICENSES/CC-BY-4.0-Apache2_Dual_License.txt).
+
+The NVIDIA images at
+`course_content/tutorials/1-Intro-to-Prompting/images/build.nvidia.png` and
+`course_content/tutorials/images/nvidia.png` are proprietary, are not licensed
+under CC BY 4.0, and remain all rights reserved. See
+[LICENSES/LicenseRef-NVIDIA-Proprietary.txt](LICENSES/LicenseRef-NVIDIA-Proprietary.txt).
 
 NVIDIA names, logos, and trademarks are not licensed for general reuse.

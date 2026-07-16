@@ -98,14 +98,15 @@ paper or reproduce its figure:
 - Jason Wei et al., "Chain-of-Thought Prompting Elicits Reasoning in Large
   Language Models," NeurIPS 2022: <https://arxiv.org/abs/2201.11903>
 
-## NVIDIA-created media
+## NVIDIA proprietary media and branding
 
-The repository includes the following NVIDIA-created media:
+The repository includes these proprietary NVIDIA-created assets:
 
 - `course_content/tutorials/1-Intro-to-Prompting/images/build.nvidia.png` —
   screenshot of the NVIDIA API Catalog interface.
-- `course_content/tutorials/images/nvidia.png` — NVIDIA course branding asset.
+- `course_content/tutorials/images/nvidia.png` — NVIDIA logo.
 
-The copyrightable presentation of these files is made available under
-CC BY 4.0 as recorded in `REUSE.toml`. NVIDIA names, logos, and trademarks are
-not licensed for general reuse.
+These files are not licensed under CC BY 4.0 or Apache-2.0 and remain all
+rights reserved under `LICENSES/LicenseRef-NVIDIA-Proprietary.txt`.
+
+NVIDIA names, logos, and trademarks are not licensed for general reuse.

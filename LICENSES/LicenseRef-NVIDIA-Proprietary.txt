@@ -1,0 +1,15 @@
+NVIDIA Proprietary Asset Notice
+
+Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This notice applies to:
+
+course_content/tutorials/images/nvidia.png
+course_content/tutorials/1-Intro-to-Prompting/images/build.nvidia.png
+
+This file is proprietary NVIDIA material. It is not licensed under the
+Creative Commons Attribution 4.0 International License, the Apache License
+2.0, or any other open-source or open-content license. No license is granted
+for its independent reuse.
+
+NVIDIA names, logos, and trademarks are not licensed for general reuse.

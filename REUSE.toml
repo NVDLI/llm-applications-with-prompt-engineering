@@ -44,11 +44,11 @@ SPDX-License-Identifier = "CC-BY-4.0"
 [[annotations]]
 path = "course_content/tutorials/1-Intro-to-Prompting/images/build.nvidia.png"
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
-SPDX-License-Identifier = "CC-BY-4.0"
-SPDX-FileComment = "NVIDIA-created screenshot of the NVIDIA API Catalog interface. NVIDIA trademark rights are not licensed."
+SPDX-License-Identifier = "LicenseRef-NVIDIA-Proprietary"
+SPDX-FileComment = "Proprietary NVIDIA API Catalog screenshot. Not licensed under CC BY 4.0 or Apache-2.0. All rights reserved."
 
 [[annotations]]
 path = "course_content/tutorials/images/nvidia.png"
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
-SPDX-License-Identifier = "CC-BY-4.0"
-SPDX-FileComment = "NVIDIA-created course branding asset. NVIDIA trademark rights are not licensed."
+SPDX-License-Identifier = "LicenseRef-NVIDIA-Proprietary"
+SPDX-FileComment = "Proprietary NVIDIA logo. Not licensed under CC BY 4.0 or Apache-2.0. All rights reserved."
