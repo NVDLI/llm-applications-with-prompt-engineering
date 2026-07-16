@@ -1,0 +1,19 @@
+# Operating-system files
+.DS_Store
+
+# Python and Jupyter generated files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments and credentials
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime output
+*.log
+flagged/

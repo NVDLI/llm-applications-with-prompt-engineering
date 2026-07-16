@@ -29,10 +29,6 @@ In these labs, learners will:
 | 05 | Tools and agents | [50-Section-Introduction.ipynb](./course_content/tutorials/5-Tools/50-Section-Introduction.ipynb) |
 | 06 | Workshop conclusion | [60-Conclusion.ipynb](./course_content/tutorials/6-Conclusion/60-Conclusion.ipynb) |
 
-The legacy grader, assessment solution, certificate workflow, reverse proxies,
-and deployment-only services are intentionally excluded. The reusable workshop
-conclusion is retained as Module 06.
-
 ## API access
 
 The interactive examples require an NVIDIA API key from
@@ -83,8 +79,7 @@ jupyter lab tutorials
 
 ## Repository layout
 
-The repository follows the same organization as the open-source DLI course
-repositories `fundamentals-of-deep-learning` and `oss-genai`:
+The repository is organized as follows:
 
 - `course_content/Dockerfile` defines the shared CPU notebook runtime.
 - `course_content/environment` contains dependencies and startup logic.
@@ -116,10 +111,16 @@ never commit API credentials or generated responses.
 
 This repository uses a mixed licensing model:
 
-- Source-code files and code cells: Apache License 2.0
+- Source-code files and code cells in Jupyter notebooks:
+  [Apache License 2.0](LICENSES/Apache-2.0.txt)
 - Documentation, Markdown and raw notebook cells, and NVIDIA-created
-  educational media: Creative Commons Attribution 4.0 International
+  educational media:
+  [Creative Commons Attribution 4.0 International](LICENSES/CC-BY-4.0.txt)
 - Third-party material: its original license, as documented in
-  `THIRD_PARTY_NOTICES.md`
+  [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+
+Each complete Jupyter notebook is dual-licensed: code cells under Apache-2.0
+and non-code cells under CC-BY-4.0. The combined dual-license terms are in
+[LICENSES/CC-BY-4.0-Apache2_Dual_License.txt](LICENSES/CC-BY-4.0-Apache2_Dual_License.txt).
 
 NVIDIA names, logos, and trademarks are not licensed for general reuse.

@@ -7,13 +7,14 @@ path = [
 ]
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "Apache-2.0 AND CC-BY-4.0"
-SPDX-FileComment = "Code cells are Apache-2.0. Markdown and raw cells are CC-BY-4.0."
+SPDX-FileComment = "Code cells are Apache-2.0. Markdown and raw cells are CC-BY-4.0. Combined dual-license terms in LICENSES/CC-BY-4.0-Apache2_Dual_License.txt."
 
 [[annotations]]
 path = [
     "course_content/Dockerfile",
     "course_content/environment/*",
-    "course_content/tutorials/**/*.py"
+    "course_content/tutorials/**/*.py",
+    "course_content/tutorials/3-Prompting-With-Messages/chat_helpers/*.py"
 ]
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "Apache-2.0"
@@ -41,10 +42,13 @@ SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
-path = [
-    "course_content/tutorials/images/*",
-    "course_content/tutorials/**/images/*"
-]
+path = "course_content/tutorials/1-Intro-to-Prompting/images/build.nvidia.png"
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "CC-BY-4.0"
-SPDX-FileComment = "NVIDIA-created educational media and screenshots. NVIDIA trademark rights are not licensed."
+SPDX-FileComment = "NVIDIA-created screenshot of the NVIDIA API Catalog interface. NVIDIA trademark rights are not licensed."
+
+[[annotations]]
+path = "course_content/tutorials/images/nvidia.png"
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "NVIDIA-created course branding asset. NVIDIA trademark rights are not licensed."

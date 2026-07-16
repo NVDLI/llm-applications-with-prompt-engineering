@@ -1,9 +1,8 @@
 # Prompt Engineering Course Content
 
-This directory contains the shared runtime and instructional material for the
-course. It replaces the legacy Compose stack with one portable JupyterLab
-container. A GPU is not required because model inference is performed by the
-configured external API endpoint.
+This directory contains the shared JupyterLab runtime and instructional
+material for the course. A GPU is not required because model inference is
+performed by the configured external API endpoint.
 
 ## Contents
 
@@ -26,10 +25,6 @@ configured external API endpoint.
     ├── 6-Conclusion/
     └── images/
 ~~~
-
-The assessment notebook, grader, answer notebook, synthetic assessment data,
-certificate integration, API-key proxy, and platform deployment files are not
-part of this distribution.
 
 ## API key
 
