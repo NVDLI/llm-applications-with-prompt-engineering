@@ -55,15 +55,6 @@ Open <http://localhost:8888> and begin with `Workshop-Intro.ipynb`.
 `11-Nvidia-NIM.ipynb` explains how to generate a key, and the first key setup
 cell appears in `12-Hello-OpenAI.ipynb`.
 
-To use a compatible self-hosted endpoint:
-
-~~~bash
-docker run --rm -it \
-  -p 8888:8888 \
-  -e NVIDIA_BASE_URL="http://host.docker.internal:8000/v1" \
-  oss-pe
-~~~
-
 ## Run locally
 
 Python 3.12 is recommended.

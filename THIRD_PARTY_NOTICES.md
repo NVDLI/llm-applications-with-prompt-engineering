@@ -27,17 +27,20 @@ not vendored and retain their own licenses.
 | `jupyterlab` | 4.6.1 | BSD-3-Clause |
 | `tqdm` | 4.67.3 | MIT and MPL-2.0 |
 | `langchain-nvidia-ai-endpoints` | 1.2.1 | MIT |
-| `langchain-community` | 0.4.1 | MIT |
-| `langchain` | 1.2.17 | MIT |
-| `langgraph` | 1.1.10 | MIT |
+| `langchain-community` | 0.4.2 | MIT |
+| `langchain` | 1.3.14 | MIT |
+| `langchain-core` | 1.5.0 | MIT |
+| `langchain-openai` | 1.4.0 | MIT |
+| `langsmith` | 0.10.9 | MIT |
+| `langgraph` | 1.2.9 | MIT |
 | `Wikipedia-API` | 0.14.1 | MIT |
 | `gradio` | 6.20.0 | Apache-2.0 |
 | `grandalf` | 0.8 | EPL-1.0 |
 | `contractions` | 0.1.73 | Apache-2.0 |
-| `openai` | 2.34.0 | Apache-2.0 |
+| `openai` | 2.46.0 | Apache-2.0 |
 | `httpx` | 0.28.1 | BSD-3-Clause |
-| `huggingface_hub` | 0.36.2 | Apache-2.0 |
-| `requests` | 2.32.5 | Apache-2.0 |
+| `huggingface_hub` | 1.9.2 | Apache-2.0 |
+| `requests` | 2.34.2 | Apache-2.0 |
 
 Package metadata and license texts are available from each package's PyPI
 project page and installed distribution.
