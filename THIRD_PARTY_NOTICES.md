@@ -27,7 +27,6 @@ not vendored and retain their own licenses.
 | `jupyterlab` | 4.6.1 | BSD-3-Clause |
 | `tqdm` | 4.67.3 | MIT and MPL-2.0 |
 | `langchain-nvidia-ai-endpoints` | 1.4.3 | MIT |
-| `langchain-community` | 0.4.2 | MIT |
 | `langchain` | 1.3.14 | MIT |
 | `langchain-core` | 1.5.0 | MIT |
 | `langchain-openai` | 1.4.0 | MIT |
