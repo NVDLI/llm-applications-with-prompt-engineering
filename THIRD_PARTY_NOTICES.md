@@ -34,7 +34,7 @@ not vendored and retain their own licenses.
 | `langgraph` | 1.2.9 | MIT |
 | `Wikipedia-API` | 0.14.1 | MIT |
 | `gradio` | 6.20.0 | Apache-2.0 |
-| `grandalf` | 0.8 | EPL-1.0 |
+| `grandalf` | 0.8 | GPL-2.0-or-later AND EPL-1.0 |
 | `contractions` | 0.1.73 | Apache-2.0 |
 | `openai` | 2.46.0 | Apache-2.0 |
 | `httpx` | 0.28.1 | BSD-3-Clause |

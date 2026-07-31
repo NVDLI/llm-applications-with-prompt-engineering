@@ -1,9 +1,3 @@
 # Code owners for Building LLM Applications With Prompt Engineering.
-#
-# Owners are intentionally left unset. Add the appropriate team handles before
-# enabling Code Owner approval rules, for example:
-#
-# *                          @your-team-handle
-# /course_content/           @course-maintainer
-# /course_content/Dockerfile @runtime-maintainer
 
+*                          @jdurillobarr

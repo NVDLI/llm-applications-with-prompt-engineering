@@ -33,6 +33,7 @@ SPDX-License-Identifier = "Apache-2.0"
 path = [
     "README.md",
     "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
     "SECURITY.md",
     "THIRD_PARTY_NOTICES.md",
     "course_content/README.md",
