@@ -34,12 +34,17 @@ not vendored and retain their own licenses.
 | `langgraph` | 1.2.9 | MIT |
 | `Wikipedia-API` | 0.14.1 | MIT |
 | `gradio` | 6.20.0 | Apache-2.0 |
-| `grandalf` | 0.8 | GPL-2.0-or-later AND EPL-1.0 |
-| `contractions` | 0.1.73 | Apache-2.0 |
+| `grandalf` | 0.8 | GPL-2.0-or-later OR EPL-1.0 |
+| `contractions` | 0.1.73 | MIT |
 | `openai` | 2.46.0 | Apache-2.0 |
 | `httpx` | 0.28.1 | BSD-3-Clause |
 | `huggingface_hub` | 1.9.2 | Apache-2.0 |
 | `requests` | 2.34.2 | Apache-2.0 |
+
+`grandalf` is a transitive dependency pulled in by `langgraph`; it is not
+imported directly by any course notebook. It is consumed unmodified as
+installed by pip. NVIDIA elects the EPL-1.0 terms; grandalf is not modified,
+so EPL-1.0's copyleft terms do not trigger.
 
 Package metadata and license texts are available from each package's PyPI
 project page and installed distribution.
