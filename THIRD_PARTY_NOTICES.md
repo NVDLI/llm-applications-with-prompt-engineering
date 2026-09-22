@@ -39,10 +39,10 @@ not vendored and retain their own licenses.
 | `httpx` | 0.28.1 | BSD-3-Clause |
 | `requests` | 2.34.2 | Apache-2.0 |
 
-`grandalf` is required by `langgraph` and pinned explicitly for reproducible
-installs; it is not imported directly by any course notebook. It is consumed
-unmodified as installed by pip. NVIDIA elects the EPL-1.0 terms; grandalf is
-not modified, so EPL-1.0's copyleft terms do not trigger.
+`grandalf` is a transitive dependency pulled in by `langgraph`; it is not
+imported directly by any course notebook. It is consumed unmodified as
+installed by pip. NVIDIA elects the EPL-1.0 terms; grandalf is not modified,
+so EPL-1.0's copyleft terms do not trigger.
 
 Package metadata and license texts are available from each package's PyPI
 project page and installed distribution.
