@@ -23,28 +23,26 @@ not vendored and retain their own licenses.
 
 | Package | Version | Declared license |
 |---|---:|---|
-| `jupyter` | 1.0.0 | BSD-3-Clause |
-| `jupyterlab` | 4.6.1 | BSD-3-Clause |
-| `tqdm` | 4.67.3 | MIT and MPL-2.0 |
+| `jupyter` | 1.1.1 | BSD-3-Clause |
+| `jupyterlab` | 4.6.2 | BSD-3-Clause |
+| `tqdm` | 4.70.0 | MIT and MPL-2.0 |
 | `langchain-nvidia-ai-endpoints` | 1.4.3 | MIT |
-| `langchain` | 1.3.14 | MIT |
-| `langchain-core` | 1.5.0 | MIT |
-| `langchain-openai` | 1.4.0 | MIT |
+| `langchain` | 1.3.18 | MIT |
+| `langchain-core` | 1.6.0 | MIT |
 | `langsmith` | 0.10.9 | MIT |
-| `langgraph` | 1.2.9 | MIT |
-| `Wikipedia-API` | 0.14.1 | MIT |
-| `gradio` | 6.20.0 | Apache-2.0 |
+| `langgraph` | 1.2.11 | MIT |
+| `Wikipedia-API` | 0.15.0 | MIT |
+| `gradio` | 6.26.0 | Apache-2.0 |
 | `grandalf` | 0.8 | GPL-2.0-or-later OR EPL-1.0 |
 | `contractions` | 0.1.73 | MIT |
-| `openai` | 2.46.0 | Apache-2.0 |
+| `openai` | 3.6.0 | Apache-2.0 |
 | `httpx` | 0.28.1 | BSD-3-Clause |
-| `huggingface_hub` | 1.9.2 | Apache-2.0 |
 | `requests` | 2.34.2 | Apache-2.0 |
 
-`grandalf` is a transitive dependency pulled in by `langgraph`; it is not
-imported directly by any course notebook. It is consumed unmodified as
-installed by pip. NVIDIA elects the EPL-1.0 terms; grandalf is not modified,
-so EPL-1.0's copyleft terms do not trigger.
+`grandalf` is required by `langgraph` and pinned explicitly for reproducible
+installs; it is not imported directly by any course notebook. It is consumed
+unmodified as installed by pip. NVIDIA elects the EPL-1.0 terms; grandalf is
+not modified, so EPL-1.0's copyleft terms do not trigger.
 
 Package metadata and license texts are available from each package's PyPI
 project page and installed distribution.
@@ -55,8 +53,8 @@ The notebooks send prompts to OpenAI-compatible NVIDIA-hosted model endpoints
 at `https://integrate.api.nvidia.com/v1`. The included examples reference the
 following model identifiers:
 
-- `nvidia/nemotron-nano-12b-v2-vl`
-- `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
+- `nvidia/nemotron-3.5-lightning-30b-a3b`
+- `nvidia/nemotron-3-super-120b-a12b`
 
 No API key, model, model weight, training dataset, or fine-tuning dataset is
 committed to this repository. Learners obtain their own credentials and are
