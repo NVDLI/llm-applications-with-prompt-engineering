@@ -64,6 +64,11 @@ The Brev Launchable will provide a preconfigured environment for the course:
 4. Open JupyterLab and navigate to `course_content/tutorials`.
 5. Begin with `Workshop-Intro.ipynb` and follow the modules in order.
 
+The Launchable runs `course_content/environment/brev_setup.sh` to install the
+pinned dependencies and register the isolated course environment as the
+default Python kernel. Learners do not need to select a different kernel for
+each notebook.
+
 Do not provide your NVIDIA API key as a Brev launch parameter. Enter it only
 when prompted by an API-backed notebook.
 
