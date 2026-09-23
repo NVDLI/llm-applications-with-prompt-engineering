@@ -65,7 +65,7 @@ The Brev Launchable will provide a preconfigured environment for the course:
 5. Begin with `Workshop-Intro.ipynb` and follow the modules in order.
 
 The Launchable runs `course_content/environment/brev_setup.sh` to install the
-pinned dependencies and register the isolated course environment as the
+pinned dependencies and connect the isolated course environment to Brev's
 default Python kernel. Learners do not need to select a different kernel for
 each notebook.
 
