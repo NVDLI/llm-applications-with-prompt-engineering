@@ -29,4 +29,3 @@ WORKDIR /dli/tutorials
 EXPOSE 8888
 
 ENTRYPOINT ["/dli/environment/entrypoint.sh"]
-

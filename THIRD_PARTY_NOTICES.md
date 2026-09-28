@@ -22,7 +22,7 @@ The container installs these packages from the Python Package Index. They are
 not vendored and retain their own licenses.
 
 | Package | Version | Declared license |
-|---|---:|---|
+| --- | ---: | --- |
 | `jupyter` | 1.1.1 | BSD-3-Clause |
 | `jupyterlab` | 4.6.2 | BSD-3-Clause |
 | `tqdm` | 4.70.0 | MIT and MPL-2.0 |
