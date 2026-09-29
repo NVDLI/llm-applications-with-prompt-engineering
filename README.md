@@ -31,17 +31,50 @@ In these labs, learners will:
 
 ## API access
 
-The interactive examples require an NVIDIA API key from
-[build.nvidia.com](https://build.nvidia.com/explore/discover). The course does
-not accept the key through the Dockerfile, Docker environment, command line, or
-filesystem. Each API-backed notebook contains a normal setup cell that prompts
-for the key and keeps it only in that notebook kernel's memory. Because
-notebooks normally use separate kernels, expect to paste the key again when
-starting another notebook.
+The default course path uses an NVIDIA API key from
+[build.nvidia.com](https://build.nvidia.com/explore/discover). The notebooks do
+not require a local GPU, so learners can use an eligible CPU-only NVIDIA Brev
+instance where free capacity is available. Access is subject to the applicable
+service terms, quotas, rate limits, regional availability, and model
+availability.
+
+The course does not accept an API key through the Dockerfile, Docker
+environment, command line, or filesystem. Each API-backed notebook contains a
+normal setup cell that prompts for the key and keeps it only in that notebook
+kernel's memory. Because notebooks normally use separate kernels, expect to
+paste the key again when starting another notebook.
 
 The runtime defaults `NVIDIA_BASE_URL` to
-`https://integrate.api.nvidia.com/v1`; override only the non-secret base URL to
-use a compatible self-hosted endpoint.
+`https://integrate.api.nvidia.com/v1`. The notebooks can also use another
+OpenAI-compatible endpoint that provides the required models.
+
+### Alternative endpoint example: Nebius Token Factory
+
+[Nebius Token Factory](https://tokenfactory.nebius.com/) is one example of a
+compatible service. It requires a separate account and API key and is subject
+to Nebius's own service terms, availability, quotas, and charges. NVIDIA API
+Catalog remains the course default; selecting Nebius is an explicit learner
+choice and is not an automatic failover.
+
+To use Nebius Token Factory:
+
+1. Create a Nebius Token Factory account and API key.
+2. In each API-backed notebook, use the commented alternative configuration
+   beside the existing endpoint and model settings.
+3. Enter the Nebius API key when that notebook prompts for the key. The key is
+   retained only in the current notebook kernel's memory.
+
+Use the following values:
+
+| Setting | NVIDIA API Catalog default | Nebius Token Factory |
+|---|---|---|
+| Base URL | `https://integrate.api.nvidia.com/v1` | `https://api.tokenfactory.nebius.com/v1/` |
+| Nemotron 3.5 Lightning | `nvidia/nemotron-3.5-lightning-30b-a3b` | `nvidia/Nemotron-3_5-Lightning` |
+| Nemotron 3 Super | `nvidia/nemotron-3-super-120b-a12b` | `nvidia/nemotron-3-super-120b-a12b` |
+
+The existing environment-variable names are retained for compatibility with
+the course's `ChatNVIDIA` client. Do not commit an API key or place one in a
+notebook cell.
 
 ## Run with Docker
 

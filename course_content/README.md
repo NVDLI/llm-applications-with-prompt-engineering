@@ -41,9 +41,11 @@ docker build -t oss-pe .
 docker run --rm -it -p 8888:8888 oss-pe
 ~~~
 
-The default endpoint is `https://integrate.api.nvidia.com/v1`. Set
-`NVIDIA_BASE_URL` when starting the container to use another OpenAI-compatible
-NVIDIA endpoint.
+The default endpoint is `https://integrate.api.nvidia.com/v1`. The notebooks
+also contain a commented example for using Nebius Token Factory as an
+alternative OpenAI-compatible endpoint. See the repository-level
+[`README.md`](../README.md#alternative-endpoint-example-nebius-token-factory)
+for the required base URL, model IDs, account instructions, and usage notes.
 
 ## Run locally
 
