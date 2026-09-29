@@ -30,6 +30,9 @@ In these labs, learners will:
 | 05 | Tools and agents | [50-Section-Introduction.ipynb](./course_content/tutorials/5-Tools/50-Section-Introduction.ipynb) |
 | 06 | Workshop conclusion | [60-Conclusion.ipynb](./course_content/tutorials/6-Conclusion/60-Conclusion.ipynb) |
 
+The companion [course slide deck](./course_content/slides/slides-v1.pptx) is
+included with the course materials.
+
 ## Usage
 
 The course can run on NVIDIA Brev, in Docker, or in a local Python
