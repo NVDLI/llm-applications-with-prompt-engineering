@@ -13,7 +13,7 @@ performed by the configured external API endpoint.
 │   ├── entrypoint.sh
 │   └── requirements.txt
 ├── slides/
-│   ├── slides-v1.pptx
+│   ├── FOR_OSRB_REVIEW.md
 │   └── THIRD_PARTY_NOTICES.md
 └── tutorials/
     ├── Workshop-Intro.ipynb

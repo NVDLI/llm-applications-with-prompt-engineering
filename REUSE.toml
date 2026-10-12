@@ -43,12 +43,6 @@ SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
-path = "course_content/slides/*.pptx"
-SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
-SPDX-License-Identifier = "CC-BY-4.0"
-SPDX-FileComment = "The NVIDIA-authored presentation is licensed under CC-BY-4.0. Embedded third-party material retains its original terms as documented in course_content/slides/THIRD_PARTY_NOTICES.md."
-
-[[annotations]]
 path = "course_content/tutorials/1-Intro-to-Prompting/images/build.nvidia.png"
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "LicenseRef-NVIDIA-Proprietary"

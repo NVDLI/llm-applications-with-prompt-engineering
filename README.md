@@ -1,8 +1,7 @@
 # Building LLM Applications With Prompt Engineering
 
 Building LLM Applications With Prompt Engineering is an open-source,
-hands-on [NVIDIA Deep Learning Institute](https://www.nvidia.com/en-us/training/?ncid=progr-950529-vt07)
-workshop. Learners use the
+hands-on NVIDIA Deep Learning Institute workshop. Learners use the
 OpenAI-compatible NVIDIA API and LangChain to build prompt-driven applications,
 structured-output pipelines, tools, and agents.
 
@@ -30,16 +29,7 @@ In these labs, learners will:
 | 05 | Tools and agents | [50-Section-Introduction.ipynb](./course_content/tutorials/5-Tools/50-Section-Introduction.ipynb) |
 | 06 | Workshop conclusion | [60-Conclusion.ipynb](./course_content/tutorials/6-Conclusion/60-Conclusion.ipynb) |
 
-The companion [course slide deck](./course_content/slides/slides-v1.pptx) is
-included with the course materials.
-
-## Usage
-
-The course can run on NVIDIA Brev, in Docker, or in a local Python
-environment. A local GPU is not required because the notebooks call hosted
-OpenAI-compatible NVIDIA model endpoints.
-
-### API access
+## API access
 
 The default course path uses an NVIDIA API key from
 [build.nvidia.com](https://build.nvidia.com/explore/discover). The notebooks do
@@ -117,33 +107,7 @@ Begin with a short chat request, then test the features required by the
 notebook before running the complete exercise. Consult the endpoint's API
 documentation for its supported behavior and error meanings.
 
-### 1. Launch with NVIDIA Brev (recommended)
-
-> **Brev launch link:** A course-specific one-click launch link will be added
-> after this repository is published and its NVIDIA Brev Launchable has been
-> tested.
-
-The Brev Launchable will provide a preconfigured environment for the course:
-
-1. Open the course's **Launch on Brev** link and sign in to NVIDIA Brev.
-2. Keep the default CPU instance unless you specifically need another instance
-   type. The course does not require a GPU.
-3. Select **Deploy** and wait for the environment to finish starting.
-4. Open JupyterLab and navigate to `course_content/tutorials`.
-5. Begin with `Workshop-Intro.ipynb` and follow the modules in order.
-
-The Launchable runs `course_content/environment/brev_setup.sh` to install the
-pinned dependencies and connect the isolated course environment to Brev's
-default Python kernel. Learners do not need to select a different kernel for
-each notebook.
-
-Do not provide your NVIDIA API key as a Brev launch parameter. Enter it only
-when prompted by an API-backed notebook.
-
-### 2. Run with Docker
-
-Docker provides the most reproducible option for a workstation or an
-on-premises system. From the repository root, run:
+## Run with Docker
 
 ```bash
 cd course_content
@@ -152,13 +116,12 @@ docker run --rm -it -p 8888:8888 oss-pe
 ```
 
 Open <http://localhost:8888> and begin with `Workshop-Intro.ipynb`.
+`11-Nvidia-NIM.ipynb` explains how to generate a key, and the first key setup
+cell appears in `12-Hello-OpenAI.ipynb`.
 
-### 3. Run locally
+## Run locally
 
-Python 3.12 is recommended. From the repository root, create a virtual
-environment and install the course dependencies.
-
-On Linux or macOS:
+Python 3.12 is recommended.
 
 ```bash
 cd course_content
@@ -168,51 +131,6 @@ python -m pip install --upgrade pip
 python -m pip install -r environment/requirements.txt
 jupyter lab tutorials
 ```
-
-On Windows PowerShell:
-
-```powershell
-Set-Location course_content
-py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r environment/requirements.txt
-jupyter lab tutorials
-```
-
-Open <http://localhost:8888> if JupyterLab does not open automatically.
-
-### Use an on-premises endpoint
-
-The notebooks can use a compatible self-hosted endpoint that provides the
-models referenced by the course. Set `NVIDIA_BASE_URL` before starting
-JupyterLab, or pass it to the Docker container. Do not put an API key in the
-command.
-
-For Docker:
-
-```bash
-docker run --rm -it -p 8888:8888 \
-  -e NVIDIA_BASE_URL="https://your-endpoint.example.com/v1" \
-  oss-pe
-```
-
-For a local Linux or macOS environment:
-
-```bash
-export NVIDIA_BASE_URL="https://your-endpoint.example.com/v1"
-jupyter lab tutorials
-```
-
-For Windows PowerShell:
-
-```powershell
-$env:NVIDIA_BASE_URL = "https://your-endpoint.example.com/v1"
-jupyter lab tutorials
-```
-
-`11-Nvidia-NIM.ipynb` explains how to generate an NVIDIA API key, and the first
-key setup cell appears in `12-Hello-OpenAI.ipynb`.
 
 ## Repository layout
 
