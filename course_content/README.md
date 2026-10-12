@@ -6,7 +6,7 @@ performed by the configured external API endpoint.
 
 ## Contents
 
-~~~text
+```text
 .
 ├── Dockerfile
 ├── environment/
@@ -24,7 +24,7 @@ performed by the configured external API endpoint.
     ├── 5-Tools/
     ├── 6-Conclusion/
     └── images/
-~~~
+```
 
 ## API key
 
@@ -36,10 +36,10 @@ so a new notebook kernel asks for it again.
 
 ## Run with Docker
 
-~~~bash
+```bash
 docker build -t oss-pe .
 docker run --rm -it -p 8888:8888 oss-pe
-~~~
+```
 
 The default endpoint is `https://integrate.api.nvidia.com/v1`. The notebooks
 also contain commented guidance for using an alternative OpenAI-compatible
@@ -50,10 +50,10 @@ compatibility considerations.
 
 ## Run locally
 
-~~~bash
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r environment/requirements.txt
 jupyter lab tutorials
-~~~
+```

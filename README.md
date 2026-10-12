@@ -20,7 +20,7 @@ In these labs, learners will:
 ## Course modules
 
 | # | Module | Starting notebook |
-|---|---|---|
+| --- | --- | --- |
 | 00 | Workshop introduction | [Workshop-Intro.ipynb](./course_content/tutorials/Workshop-Intro.ipynb) |
 | 01 | Introduction to prompting | [10-Section-Introduction.ipynb](./course_content/tutorials/1-Intro-to-Prompting/10-Section-Introduction.ipynb) |
 | 02 | LCEL, runnables, and chains | [20-Section-Introduction.ipynb](./course_content/tutorials/2-Chains/20-Section-Introduction.ipynb) |
@@ -109,11 +109,11 @@ documentation for its supported behavior and error meanings.
 
 ## Run with Docker
 
-~~~bash
+```bash
 cd course_content
 docker build -t oss-pe .
 docker run --rm -it -p 8888:8888 oss-pe
-~~~
+```
 
 Open <http://localhost:8888> and begin with `Workshop-Intro.ipynb`.
 `11-Nvidia-NIM.ipynb` explains how to generate a key, and the first key setup
@@ -123,14 +123,14 @@ cell appears in `12-Hello-OpenAI.ipynb`.
 
 Python 3.12 is recommended.
 
-~~~bash
+```bash
 cd course_content
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r environment/requirements.txt
 jupyter lab tutorials
-~~~
+```
 
 ## Repository layout
 
@@ -147,11 +147,11 @@ The repository is organized as follows:
 
 Run these lightweight checks from the repository root:
 
-~~~bash
+```bash
 bash -n course_content/environment/entrypoint.sh
 find course_content/tutorials -name '*.ipynb' -print0 | xargs -0 -n1 jq empty
 git status --ignored --short
-~~~
+```
 
 A complete functional test requires a valid API key and network access because
 the notebooks intentionally call hosted models and, in one exercise, the
