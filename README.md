@@ -51,33 +51,61 @@ The runtime defaults `NVIDIA_BASE_URL` to
 `https://integrate.api.nvidia.com/v1`. The notebooks can also use another
 OpenAI-compatible endpoint that provides the required models.
 
-### Alternative endpoint example: Nebius Token Factory
+### Use another OpenAI-compatible API endpoint
 
-[Nebius Token Factory](https://tokenfactory.nebius.com/) is one example of a
-compatible service. It requires a separate account and API key and is subject
-to Nebius's own service terms, availability, quotas, and charges. NVIDIA API
-Catalog remains the course default; selecting Nebius is an explicit learner
-choice and is not an automatic failover.
+You can adapt the notebooks to a hosted or self-hosted OpenAI-compatible chat
+completion endpoint. Review its access requirements, service terms, data
+handling, quotas, and any charges before using it. Switching endpoints is a
+manual configuration choice; the course does not switch automatically.
 
-To use Nebius Token Factory:
+In **each API-backed notebook** you want to run against another endpoint:
 
-1. Create a Nebius Token Factory account and API key.
-2. In each API-backed notebook, use the commented alternative configuration
-   beside the existing endpoint and model settings.
-3. Enter the Nebius API key when that notebook prompts for the key. The key is
-   retained only in the current notebook kernel's memory.
+1. Set `os.environ["NVIDIA_BASE_URL"]` to the endpoint's documented API base
+   URL before the cell that reads `base_url`. Include the API version path
+   where required (often `/v1`), rather than a website URL or the full
+   `/chat/completions` request URL.
+2. Change the `model` value, or the `model=` argument in a direct API call, to
+   the exact model identifier accepted by that endpoint. Identifiers can
+   differ in spelling and capitalization even for the same model. The course
+   uses Nemotron 3.5 Lightning and Nemotron 3 Super; choose the corresponding
+   models if available, or alternatives with the capabilities needed by each
+   exercise. Different models can produce different results.
+3. Enter credentials for the selected endpoint in the notebook's API-key
+   prompt. The existing code stores the key in `NVIDIA_API_KEY` for the course
+   client, even when the endpoint is elsewhere. If a key is already present
+   in the kernel, restart the kernel and rerun the setup cells to replace it.
+   Never put a key in notebook source or commit it to the repository.
+4. Rerun the client-creation cells after changing the configuration. Existing
+   `client` and `llm` objects retain their earlier settings. Configuration in
+   one notebook is not automatically shared with another notebook's kernel.
 
-Use the following values:
+OpenAI compatibility does not guarantee that every exercise works unchanged.
+Check the following when adapting or troubleshooting a notebook:
 
-| Setting | NVIDIA API Catalog default | Nebius Token Factory |
-|---|---|---|
-| Base URL | `https://integrate.api.nvidia.com/v1` | `https://api.tokenfactory.nebius.com/v1/` |
-| Nemotron 3.5 Lightning | `nvidia/nemotron-3.5-lightning-30b-a3b` | `nvidia/Nemotron-3_5-Lightning` |
-| Nemotron 3 Super | `nvidia/nemotron-3-super-120b-a12b` | `nvidia/nemotron-3-super-120b-a12b` |
+- **Client compatibility:** The notebooks use the `OpenAI` SDK and LangChain's
+  `ChatNVIDIA` integration. An endpoint may require a different LangChain
+  integration, authentication mechanism, or headers; changing the URL alone
+  may not be sufficient. A different integration may also require additional
+  dependencies.
+- **Request parameters:** Check supported token-limit parameters, temperature
+  ranges, and reasoning controls. In particular, the course's
+  `chat_template_kwargs` and `enable_thinking` settings are not universal.
+  Review parameters passed through `extra_body` or `model_kwargs` if requests
+  are rejected.
+- **Exercise capabilities:** Confirm streaming, structured output, tool
+  calling, and tool-choice controls are supported where used. A successful
+  basic chat request does not establish support for these features. Context
+  and output-token limits can also differ.
+- **Access and connectivity:** Authentication or permission errors can mean
+  the key lacks access to the selected model. Not-found errors can indicate
+  an incorrect base URL or model identifier. Rate-limit errors, timeouts, and
+  service errors require checking the endpoint's limits and availability.
+  The endpoint must be reachable from the machine running the notebook;
+  `localhost` on Brev refers to the Brev instance, not your own computer.
 
-The existing environment-variable names are retained for compatibility with
-the course's `ChatNVIDIA` client. Do not commit an API key or place one in a
-notebook cell.
+Begin with a short chat request, then test the features required by the
+notebook before running the complete exercise. Consult the endpoint's API
+documentation for its supported behavior and error meanings.
 
 ## Run with Docker
 
