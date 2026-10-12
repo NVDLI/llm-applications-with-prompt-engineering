@@ -41,17 +41,81 @@ OpenAI-compatible NVIDIA model endpoints.
 
 ### API access
 
-The interactive examples require an NVIDIA API key from
-[build.nvidia.com](https://build.nvidia.com/explore/discover). The course does
-not accept the key through the Dockerfile, Docker environment, command line, or
-filesystem. Each API-backed notebook contains a normal setup cell that prompts
-for the key and keeps it only in that notebook kernel's memory. Because
-notebooks normally use separate kernels, expect to paste the key again when
-starting another notebook.
+The default course path uses an NVIDIA API key from
+[build.nvidia.com](https://build.nvidia.com/explore/discover). The notebooks do
+not require a local GPU, so learners can use an eligible CPU-only NVIDIA Brev
+instance where free capacity is available. Access is subject to the applicable
+service terms, quotas, rate limits, regional availability, and model
+availability. NVIDIA provides free hosted API endpoints for prototyping;
+responses may occasionally be slow or the service temporarily unavailable.
+See Sections 2 and 7 of the
+[NVIDIA Technology Access Terms of Use](https://developer.nvidia.com/legal/terms).
+
+The course does not accept an API key through the Dockerfile, Docker
+environment, command line, or filesystem. Each API-backed notebook contains a
+normal setup cell that prompts for the key and keeps it only in that notebook
+kernel's memory. Because notebooks normally use separate kernels, expect to
+paste the key again when starting another notebook.
 
 The runtime defaults `NVIDIA_BASE_URL` to
-`https://integrate.api.nvidia.com/v1`. You can override only this non-secret
-base URL to use a compatible self-hosted endpoint.
+`https://integrate.api.nvidia.com/v1`. The notebooks can also use another
+OpenAI-compatible endpoint that provides the required models.
+
+### Use another OpenAI-compatible API endpoint
+
+You can adapt the notebooks to a hosted or self-hosted OpenAI-compatible chat
+completion endpoint. Review its access requirements, service terms, data
+handling, quotas, and any charges before using it. Switching endpoints is a
+manual configuration choice; the course does not switch automatically.
+
+In **each API-backed notebook** you want to run against another endpoint:
+
+1. Set `os.environ["NVIDIA_BASE_URL"]` to the endpoint's documented API base
+   URL before the cell that reads `base_url`. Include the API version path
+   where required (often `/v1`), rather than a website URL or the full
+   `/chat/completions` request URL.
+2. Change the `model` value, or the `model=` argument in a direct API call, to
+   the exact model identifier accepted by that endpoint. Identifiers can
+   differ in spelling and capitalization even for the same model. The course
+   uses Nemotron 3.5 Lightning and Nemotron 3 Super; choose the corresponding
+   models if available, or alternatives with the capabilities needed by each
+   exercise. Different models can produce different results.
+3. Enter credentials for the selected endpoint in the notebook's API-key
+   prompt. The existing code stores the key in `NVIDIA_API_KEY` for the course
+   client, even when the endpoint is elsewhere. If a key is already present
+   in the kernel, restart the kernel and rerun the setup cells to replace it.
+   Never put a key in notebook source or commit it to the repository.
+4. Rerun the client-creation cells after changing the configuration. Existing
+   `client` and `llm` objects retain their earlier settings. Configuration in
+   one notebook is not automatically shared with another notebook's kernel.
+
+OpenAI compatibility does not guarantee that every exercise works unchanged.
+Check the following when adapting or troubleshooting a notebook:
+
+- **Client compatibility:** The notebooks use the `OpenAI` SDK and LangChain's
+  `ChatNVIDIA` integration. An endpoint may require a different LangChain
+  integration, authentication mechanism, or headers; changing the URL alone
+  may not be sufficient. A different integration may also require additional
+  dependencies.
+- **Request parameters:** Check supported token-limit parameters, temperature
+  ranges, and reasoning controls. In particular, the course's
+  `chat_template_kwargs` and `enable_thinking` settings are not universal.
+  Review parameters passed through `extra_body` or `model_kwargs` if requests
+  are rejected.
+- **Exercise capabilities:** Confirm streaming, structured output, tool
+  calling, and tool-choice controls are supported where used. A successful
+  basic chat request does not establish support for these features. Context
+  and output-token limits can also differ.
+- **Access and connectivity:** Authentication or permission errors can mean
+  the key lacks access to the selected model. Not-found errors can indicate
+  an incorrect base URL or model identifier. Rate-limit errors, timeouts, and
+  service errors require checking the endpoint's limits and availability.
+  The endpoint must be reachable from the machine running the notebook;
+  `localhost` on Brev refers to the Brev instance, not your own computer.
+
+Begin with a short chat request, then test the features required by the
+notebook before running the complete exercise. Consult the endpoint's API
+documentation for its supported behavior and error meanings.
 
 ### 1. Launch with NVIDIA Brev (recommended)
 
