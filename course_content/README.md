@@ -42,10 +42,11 @@ docker run --rm -it -p 8888:8888 oss-pe
 ~~~
 
 The default endpoint is `https://integrate.api.nvidia.com/v1`. The notebooks
-also contain a commented example for using Nebius Token Factory as an
-alternative OpenAI-compatible endpoint. See the repository-level
-[`README.md`](../README.md#alternative-endpoint-example-nebius-token-factory)
-for the required base URL, model IDs, account instructions, and usage notes.
+also contain commented guidance for using an alternative OpenAI-compatible
+endpoint. See the repository-level
+[`README.md`](../README.md#use-another-openai-compatible-api-endpoint)
+for how to change the base URL, credentials, and model IDs, and for
+compatibility considerations.
 
 ## Run locally
 
