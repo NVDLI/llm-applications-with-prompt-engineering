@@ -36,7 +36,10 @@ The default course path uses an NVIDIA API key from
 not require a local GPU, so learners can use an eligible CPU-only NVIDIA Brev
 instance where free capacity is available. Access is subject to the applicable
 service terms, quotas, rate limits, regional availability, and model
-availability.
+availability. NVIDIA provides free hosted API endpoints for prototyping;
+responses may occasionally be slow or the service temporarily unavailable.
+See Sections 2 and 7 of the
+[NVIDIA Technology Access Terms of Use](https://developer.nvidia.com/legal/terms).
 
 The course does not accept an API key through the Dockerfile, Docker
 environment, command line, or filesystem. Each API-backed notebook contains a
