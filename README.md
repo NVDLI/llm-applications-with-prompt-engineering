@@ -1,7 +1,7 @@
 # Building LLM Applications With Prompt Engineering
 
 Building LLM Applications With Prompt Engineering is an open-source,
-hands-on [NVIDIA Deep Learning Institute](https://www.nvidia.com/en-us/training/?ncid=progr-950529-vt07)
+hands-on [NVIDIA Deep Learning Institute](https://www.nvidia.com/en-us/training?ncid=ref-dli-557888)
 workshop. Learners use the
 OpenAI-compatible NVIDIA API and LangChain to build prompt-driven applications,
 structured-output pipelines, tools, and agents.
