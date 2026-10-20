@@ -41,15 +41,14 @@ OpenAI-compatible NVIDIA model endpoints.
 
 ### API access
 
-The default course path uses an NVIDIA API key from
-[build.nvidia.com](https://build.nvidia.com/explore/discover). The notebooks do
-not require a local GPU, so learners can use an eligible CPU-only NVIDIA Brev
-instance where free capacity is available. Access is subject to the applicable
-service terms, quotas, rate limits, regional availability, and model
-availability. NVIDIA provides free hosted API endpoints for prototyping;
-responses may occasionally be slow or the service temporarily unavailable.
-See Sections 2 and 7 of the
-[NVIDIA Technology Access Terms of Use](https://developer.nvidia.com/legal/terms).
+By default, this course uses an NVIDIA API key from
+[build.nvidia.com](http://build.nvidia.com). NVIDIA provides free hosted API
+endpoints for prototyping; responses may be slow, or the service may be
+temporarily unavailable. As notebooks do not require a local GPU, learners can
+use an eligible CPU-only Brev instance where available. Access is subject to
+applicable service terms, limits, and availability. For more information,
+please see Sections 2 and 7 of the
+[NVIDIA Technology Access Terms of Use](https://developer.nvidia.com/legal/terms)
 
 The course does not accept an API key through the Dockerfile, Docker
 environment, command line, or filesystem. Each API-backed notebook contains a
