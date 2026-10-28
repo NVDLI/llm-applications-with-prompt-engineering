@@ -76,9 +76,8 @@ In **each API-backed notebook** you want to run against another endpoint:
 2. Change the `model` value, or the `model=` argument in a direct API call, to
    the exact model identifier accepted by that endpoint. Identifiers can
    differ in spelling and capitalization even for the same model. The course
-   uses Nemotron 3.5 Lightning and Nemotron 3 Super; choose the corresponding
-   models if available, or alternatives with the capabilities needed by each
-   exercise. Different models can produce different results.
+   uses Nemotron 3.5 Lightning; choose that model if available, or alternatives
+   with the capabilities needed by each exercise. Different models can produce different results.
 3. Enter credentials for the selected endpoint in the notebook's API-key
    prompt. The existing code stores the key in `NVIDIA_API_KEY` for the course
    client, even when the endpoint is elsewhere. If a key is already present

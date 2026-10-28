@@ -54,7 +54,6 @@ at `https://integrate.api.nvidia.com/v1`. The included examples reference the
 following model identifiers:
 
 - `nvidia/nemotron-3.5-lightning-30b-a3b`
-- `nvidia/nemotron-3-super-120b-a12b`
 
 No API key, model, model weight, training dataset, or fine-tuning dataset is
 committed to this repository. Learners obtain their own credentials and are
