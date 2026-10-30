@@ -1,5 +1,7 @@
 # Building LLM Applications With Prompt Engineering
 
+[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/launchable/deploy?launchableID=env-3JjMbfPsFjI5YdQPwbrldv2cZ8r)
+
 Building LLM Applications With Prompt Engineering is an open-source,
 hands-on [NVIDIA Deep Learning Institute](https://www.nvidia.com/en-us/training?ncid=ref-dli-557888)
 workshop. Learners use the
@@ -117,23 +119,17 @@ documentation for its supported behavior and error meanings.
 
 ### 1. Launch with NVIDIA Brev (recommended)
 
-> **Brev launch link:** A course-specific one-click launch link will be added
-> after this repository is published and its NVIDIA Brev Launchable has been
-> tested.
+🌟 [Launch this course on NVIDIA Brev](https://brev.nvidia.com/launchable/deploy?launchableID=env-3JjMbfPsFjI5YdQPwbrldv2cZ8r)
 
-The Brev Launchable will provide a preconfigured environment for the course:
-
-1. Open the course's **Launch on Brev** link and sign in to NVIDIA Brev.
-2. Keep the default CPU instance unless you specifically need another instance
-   type. The course does not require a GPU.
-3. Select **Deploy** and wait for the environment to finish starting.
-4. Open JupyterLab and navigate to `course_content/tutorials`.
-5. Begin with `Workshop-Intro.ipynb` and follow the modules in order.
-
-Environment setup will be configured in the Brev Launchable, rather than a
-startup script in this repository. Before publishing the launch link, the
-Launchable will be tested to ensure the course dependencies are available in
-the notebook kernel.
+1. Click the **Launch on Brev** link above (or the badge at the top of this README).
+2. Sign in or create a free NVIDIA Brev account.
+3. Keep the default CPU instance. The course does not require a GPU.
+4. Click **Deploy**. Python, course dependencies, and the default notebook kernel
+   are configured automatically. Allow several minutes for setup to finish;
+   JupyterLab may become accessible before installation is complete.
+5. Open JupyterLab from the Brev console. The workshop introduction opens
+   automatically. If needed, navigate to
+   `course_content/tutorials/Workshop-Intro.ipynb`, then follow the modules in order.
 
 Do not provide your NVIDIA API key as a Brev launch parameter. Enter it only
 when prompted by an API-backed notebook.
