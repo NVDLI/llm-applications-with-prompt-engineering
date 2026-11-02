@@ -1,6 +1,6 @@
 # Building LLM Applications With Prompt Engineering
 
-[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/launchable/deploy?launchableID=env-3JjMbfPsFjI5YdQPwbrldv2cZ8r)
+[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/launchable/deploy?launchableID=env-3JjMbfPsFjI5YdQPwbrldv2cZ8r&ncid=ref-dli-910019)
 
 Building LLM Applications With Prompt Engineering is an open-source,
 hands-on [NVIDIA Deep Learning Institute](https://www.nvidia.com/en-us/training?ncid=ref-dli-557888)
@@ -119,7 +119,7 @@ documentation for its supported behavior and error meanings.
 
 ### 1. Launch with NVIDIA Brev (recommended)
 
-🌟 [Launch this course on NVIDIA Brev](https://brev.nvidia.com/launchable/deploy?launchableID=env-3JjMbfPsFjI5YdQPwbrldv2cZ8r)
+🌟 [Launch this course on NVIDIA Brev](https://brev.nvidia.com/launchable/deploy?launchableID=env-3JjMbfPsFjI5YdQPwbrldv2cZ8r&ncid=ref-dli-910019)
 
 1. Click the **Launch on Brev** link above (or the badge at the top of this README).
 2. Sign in or create a free NVIDIA Brev account.
