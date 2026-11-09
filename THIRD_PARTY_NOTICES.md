@@ -24,13 +24,13 @@ not vendored and retain their own licenses.
 | Package | Version | Declared license |
 |---|---:|---|
 | `jupyter` | 1.1.1 | BSD-3-Clause |
-| `jupyterlab` | 4.6.2 | BSD-3-Clause |
+| `jupyterlab` | 4.6.4 | BSD-3-Clause |
 | `tqdm` | 4.70.0 | MIT and MPL-2.0 |
 | `langchain-nvidia-ai-endpoints` | 1.4.3 | MIT |
 | `langchain` | 1.3.18 | MIT |
 | `langchain-core` | 1.6.0 | MIT |
 | `langsmith` | 0.10.9 | MIT |
-| `langgraph` | 1.2.11 | MIT |
+| `langgraph` | 1.2.20 | MIT |
 | `Wikipedia-API` | 0.15.0 | MIT |
 | `gradio` | 6.26.0 | Apache-2.0 |
 | `grandalf` | 0.8 | GPL-2.0-or-later OR EPL-1.0 |
